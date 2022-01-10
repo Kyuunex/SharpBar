@@ -17,7 +17,7 @@ public class CPUTemperatureBlock
         var temperatureblock = new BlankBlock
         {
             name = "cpu_temperature",
-            full_text = "CPU TEMP: " + tempC.ToString() + " C"
+            full_text = "CPU TEMP: " + tempC.ToString() + " °C"
         };
         
         return temperatureblock;
