@@ -1,10 +1,8 @@
-using System.Text.Json;
-
 namespace SharpBar;
 
 public class TimeBlock
 {
-    public static string GetJson()
+    public static BlankBlock GetBlock()
     {
         DateTime now = DateTime.Now;
         
@@ -14,6 +12,6 @@ public class TimeBlock
             full_text = now.ToString("F")
         };
         
-        return JsonSerializer.Serialize(timeblock);
+        return timeblock;
     }
 }

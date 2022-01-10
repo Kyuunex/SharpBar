@@ -4,7 +4,7 @@ namespace SharpBar;
 
 public class CPUTemperatureBlock
 {
-    public static string GetJson()
+    public static BlankBlock GetBlock()
     {
         string SensorPath = "/sys/class/hwmon/hwmon1/temp1_input";
         
@@ -20,6 +20,6 @@ public class CPUTemperatureBlock
             full_text = "CPU TEMP: " + tempC.ToString() + " C"
         };
         
-        return JsonSerializer.Serialize(temperatureblock);
+        return temperatureblock;
     }
 }
