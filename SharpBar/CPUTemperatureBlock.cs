@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace SharpBar;
 
 public class CPUTemperatureBlock
