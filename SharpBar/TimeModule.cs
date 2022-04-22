@@ -2,13 +2,13 @@ using System;
 
 namespace SharpBar;
 
-public class TimeBlock
+public class TimeModule
 {
-    public static BlankBlock GetBlock()
+    public static Module GetBlock()
     {
         DateTime now = DateTime.Now;
         
-        var timeblock = new BlankBlock
+        var timeblock = new Module
         {
             name = "time",
             full_text = now.ToString("F")
