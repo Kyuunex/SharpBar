@@ -6,3 +6,10 @@ This project is under development.
 
 Example Screenshot:  
 ![](https://i.imgur.com/y780P1q.png)
+
+---
+
+Current features:
+- CPU temperature report
+- Date/Time report
+- Weather report

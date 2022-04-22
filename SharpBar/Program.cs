@@ -7,9 +7,11 @@ namespace SharpBar;
 
 class Program
 {
-    private const int RefreshRate = 1000;
     static void Main(string[] args)
     {
+        const int RefreshRate = 1000;
+        WeatherModule weather_init = new WeatherModule();
+        
         Console.WriteLine(@"{ ""version"": 1 }");
         Console.WriteLine("[");
         Console.WriteLine("[]");
@@ -19,6 +21,7 @@ class Program
         {
             List<Module> blocks = new List<Module>
             {
+                weather_init.GetBlock(),
                 CPUTemperatureModule.GetBlock(),
                 TimeModule.GetBlock()
             };
