@@ -11,7 +11,7 @@ public class WeatherModule
 
     public WeatherModule()
     {
-        weather_contents = new WebClient().DownloadString(WeatherAPI);
+        weather_contents = (new WebClient().DownloadString(WeatherAPI)).Trim();
     }
     
     public Module GetBlock()
