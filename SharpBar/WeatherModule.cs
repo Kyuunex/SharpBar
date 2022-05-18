@@ -14,9 +14,9 @@ public class WeatherModule
         weather_contents = (new WebClient().DownloadString(WeatherAPI)).Trim();
     }
     
-    public Module GetBlock()
+    public Block GetBlock()
     {
-        var weatherblock = new Module
+        var weatherblock = new Block
         {
             name = "weather",
             full_text = weather_contents

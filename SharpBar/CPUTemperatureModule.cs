@@ -4,7 +4,7 @@ namespace SharpBar;
 
 public class CPUTemperatureModule
 {
-    public static Module GetBlock()
+    public static Block GetBlock()
     {
         string SensorPath = "/sys/class/hwmon/hwmon1/temp1_input";
         
@@ -14,7 +14,7 @@ public class CPUTemperatureModule
 
         float tempC = TempCMILL / 1000;
         
-        var temperatureblock = new Module
+        var temperatureblock = new Block
         {
             name = "cpu_temperature",
             full_text = "CPU TEMP: " + tempC.ToString() + " °C"

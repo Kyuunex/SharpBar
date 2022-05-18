@@ -4,11 +4,11 @@ namespace SharpBar;
 
 public class TimeModule
 {
-    public static Module GetBlock()
+    public static Block GetBlock()
     {
         DateTime now = DateTime.Now;
         
-        var timeblock = new Module
+        var timeblock = new Block
         {
             name = "time",
             full_text = now.ToString("F")
