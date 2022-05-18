@@ -5,7 +5,7 @@ This project is under development.
 ---
 
 Example Screenshot:  
-![](https://i.imgur.com/y780P1q.png)
+![](https://i.imgur.com/PU0CeAy.png)
 
 ---
 
