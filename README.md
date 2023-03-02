@@ -13,6 +13,3 @@ Current features:
 - CPU temperature report
 - Date/Time report
 - Weather report
-
-Planned Features:
-- Crypto prices
